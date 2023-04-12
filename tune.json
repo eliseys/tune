@@ -1,28 +1,64 @@
 {
-    "location" :
+    "RPi" :
     {
-	"latitude" : 40.75233,
-	"longitude" : 44.89104,
-	"altitude" : 1257
+
+	"location" :
+
+	{
+	    "latitude" : 40.75233,
+	    "longitude" : 44.89104,
+	    "altitude" : 1257
+	},
+	
+	"focal_lenght" : 135.0,
+	"pixel_size" : 0.0041,
+	
+	"tripod" :
+	{
+	    "thread_pitch" : 1.75,
+	    "L" : [0.0, 177.5, 0.0],
+	    "F" : [400.0, 0.0, 0.0], 
+	    "R" : [0.0, -177.5, 0.0]
+	},
+	
+	"star_extraction_method" : "sex",
+	"path_to_sextractor" : "/usr/bin/sextractor",
+	"sextractor_config" : "default.sex",
+	
+	"imagedir" : "./images",
+	
+	"gpsd" : false
     },
 
-    "focal_lenght" : 135.0,
-    "pixel_size" : 0.0041,
-
-    "tripod" :
+    "fedora" :
     {
-	"thread_pitch" : 1.75,
-	"L" : [0.0, 177.5, 0.0],
-	"F" : [400.0, 0.0, 0.0], 
-	"R" : [0.0, -177.5, 0.0]
-    },
+
+	"location" :
+
+	{
+	    "latitude" : 40.75233,
+	    "longitude" : 44.89104,
+	    "altitude" : 1257
+	},
+	
+	"focal_lenght" : 135.0,
+	"pixel_size" : 0.0041,
+	
+	"tripod" :
+	{
+	    "thread_pitch" : 1.75,
+	    "L" : [0.0, 177.5, 0.0],
+	    "F" : [400.0, 0.0, 0.0], 
+	    "R" : [0.0, -177.5, 0.0]
+	},
+	
+	"star_extraction_method" : "sex",
+	"path_to_sextractor" : "/usr/bin/sextractor",
+	"sextractor_config" : "default.sex",
+	
+	"imagedir" : "./images",
+	
+	"gpsd" : false
+    }
     
-    "star_extraction_method" : "sex",
-    "path_to_sextractor" : "/usr/bin/sextractor",
-    "sextractor_config" : "default.sex",
-
-    "imagedir" : "./images",
-
-    "gpsd" : false
-
 }

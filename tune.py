@@ -689,7 +689,10 @@ if __name__ == "__main__":
     
     with open('tune.json', 'r') as f:
         data = json.load(f)
-    
+
+    data = data["RPi"]
+
+        
     s.imagedir = data["imagedir"]
 
     s.pixel_size = data["pixel_size"]
