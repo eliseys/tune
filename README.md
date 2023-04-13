@@ -4,44 +4,34 @@ Polar axis alignment tool
 
 ## Description
 
-Calculates the polar axis misalighment of the equatorial mount.
-Plate (astrometry) solving command-line program.
+Tune is command-line polar alignment tool. It helps accurately align equatorial mount with the celestial pole by using plate-solving technology. Tune receives as input 2 photos of circumpolar area of the sky, or 3 photos during three-point polar alignment, taken by the camera on the mount with an arbitrary rotation between frames around the polar axis of the mount. Tune identifies stars on each image and calculate the exact position of the mount polar axis in relation to the celestial pole. Once the software has determined the exact position of the axis, it can then provide the user with information on how to adjust the telescope's position to achieve precise polar alignment. This information include the required adjustments to the telescope's altitude and azimuth. Accurate polar alignment is essential for successful long-exposure astrophotography and other astronomical observations.
 
-## Getting Started
 
 ### Dependencies
 
-* astrometry.com
-* gphoto2
+* Astrometry.net
+* gPhoto2
 * Sextractor
+* Python: AstroPy, NumPy, SciPy
+
+## Usage
 
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
+```console
+~ ./tune.py
 ```
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
+```console
+~ ./tune.py -n 3
 ```
 
-## Authors
+```console
+~ ./tune.py -f image1.jpg image2.jpg
+```
 
-Contributors names and contact info
+```console
+~ ./tune.py -f image1.jpg image2.jpg image3.jpg
+```
 
-Dmitry Kolesnikov 
 
-## License
 
-MIT
