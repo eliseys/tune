@@ -9,10 +9,10 @@ Tune is command-line polar alignment tool. It helps accurately align equatorial 
 
 ### Dependencies
 
-* (<samp>astrometry.net</samp>)[http://astrometry.net/]
+* Astrometry.net
 * gPhoto2
 * Sextractor
-* Python
+* Python: AstroPy, NumPy, SciPy
 
 ## Usage
 
