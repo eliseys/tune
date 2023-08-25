@@ -28,8 +28,9 @@ from sh import gphoto2 as gp
 
 from exif import Image as exif_data
 
-#from astropy.utils.iers import conf
-#conf.auto_max_age = None
+from astropy.utils.iers import conf
+conf.auto_max_age = None
+#conf.auto_download = False
 
 
 
@@ -719,6 +720,7 @@ if __name__ == "__main__":
     
     if not os.path.exists(s.imagedir):
         os.makedirs(s.imagedir)
+
 
 
     
