@@ -17,6 +17,9 @@ images/
 *.JPG
 *.jpg
 *.jpeg
+*.tiff
+*.tif
+*.TIFF
 
 # astrometry.net files
 *.axy
@@ -27,6 +30,9 @@ images/
 *.rlds
 *.solved
 *-indx.xyls
+
+# ephem files
+*.bsp
 
 # Distribution / packaging
 .Python
